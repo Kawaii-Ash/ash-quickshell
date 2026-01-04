@@ -27,7 +27,7 @@ PanelWindow {
 
     Rectangle {
         anchors.fill: parent
-        color: "#dd0f1016"
+        color: "#ef141620"
         topRightRadius: border_radius
         topLeftRadius: border_radius
         anchors.bottomMargin: 21
@@ -74,7 +74,7 @@ PanelWindow {
         anchors.topMargin: 42
         bottomLeftRadius: border_radius
         bottomRightRadius: border_radius
-        color: "#dd1d202f"
+        color: "#ef1d202f"
 
         RowLayout {
             anchors {
@@ -97,6 +97,7 @@ PanelWindow {
             }
 
             Image { source: bluebutterfly_icon } 
+
             Cpu {}
             
             Image { source: bluebutterfly_icon }
