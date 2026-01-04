@@ -74,7 +74,7 @@ PanelWindow {
         anchors.topMargin: 42
         bottomLeftRadius: border_radius
         bottomRightRadius: border_radius
-        color: "#dd191b25"
+        color: "#dd1d202f"
 
         RowLayout {
             anchors {
