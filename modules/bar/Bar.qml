@@ -63,6 +63,7 @@ PanelWindow {
             
             Network {}
             Volume {}
+            Battery {}
             DateTimeView {}
             Image { source: gemini_icon }
         }

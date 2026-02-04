@@ -83,7 +83,10 @@ Item {
                 font.family: "dudu calligraphy"
                 font.pixelSize: 21
                 color: "#ccc"
+                horizontalAlignment: Text.AlignRight
                 Layout.minimumWidth: rateMetrics.boundingRect(rateTemplate).width
+                Layout.preferredWidth: rateMetrics.boundingRect(rateTemplate).width
+                Layout.maximumWidth: rateMetrics.boundingRect(rateTemplate).width
             }
         }
         RowLayout {
@@ -99,7 +102,10 @@ Item {
                 font.family: "dudu calligraphy"
                 font.pixelSize: 21
                 color: "#ccc"
+                horizontalAlignment: Text.AlignRight
                 Layout.minimumWidth: rateMetrics.boundingRect(rateTemplate).width
+                Layout.preferredWidth: rateMetrics.boundingRect(rateTemplate).width
+                Layout.maximumWidth: rateMetrics.boundingRect(rateTemplate).width
             }
         }
     }
