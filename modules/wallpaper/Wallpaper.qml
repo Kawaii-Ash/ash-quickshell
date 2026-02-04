@@ -7,6 +7,7 @@ Item {
 
     // Transition duration passed to `awww -t`
     property string transition_type: "grow"
+    property string backdrop_transition_type: "none"
     property real lastChanged: 0
 
     readonly property string workspaceFolder: Qt.resolvedUrl("assets/workspace")
@@ -55,7 +56,7 @@ Item {
         }
 
         const path = backdropImages.get(idx, "filePath")
-        backdropProc.command = ["awww", "img", "-n", "backdrop", "-t", transition_type, path]
+        backdropProc.command = ["awww", "img", "-n", "backdrop", "-t", backdrop_transition_type, path]
         backdropProc.running = true
         _lastBackdropIdx = idx
     }
