@@ -62,7 +62,7 @@ Item {
     readonly property bool isFull: status === "Full"
     readonly property string batteryIcon: {
         if (!available) return "\uf244" // battery-empty
-        if (isCharging) return "\uf376" // battery-bolt
+        if (isCharging) return "\uf0e7" // battery-bolt
         if (isFull) return "\uf240" // battery-full
         if (percent >= 90) return "\uf240"
         if (percent >= 65) return "\uf241" // battery-three-quarters
