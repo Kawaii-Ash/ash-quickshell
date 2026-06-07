@@ -2,9 +2,9 @@
   description = "ash-quickshell with qml-niri plugin";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     qml-niri = {
-      url = "github:juuyokka/qml-niri/feat-nix-flake";
+      url = "github:imiric/qml-niri";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.treefmt-nix.inputs.nixpkgs.follows = "nixpkgs";
     };

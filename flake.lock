@@ -20,16 +20,16 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1764983851,
-        "narHash": "sha256-y7RPKl/jJ/KAP/VKLMghMgXTlvNIJMHKskl8/Uuar7o=",
+        "lastModified": 1780243769,
+        "narHash": "sha256-x5UQuRsH3MqI0U9afaXSNqzTPSeZlRLvFAav2Ux1pNw=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "d9bc5c7dceb30d8d6fafa10aeb6aa8a48c218454",
+        "rev": "331800de5053fcebacf6813adb5db9c9dca22a0c",
         "type": "github"
       },
       "original": {
         "owner": "NixOS",
-        "ref": "nixos-25.11",
+        "ref": "nixos-unstable",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -59,16 +59,15 @@
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1763154417,
-        "narHash": "sha256-EMMGP1HRbEcJ1lD/bx7Hv2938l9A3FjADwXM+pBJA2k=",
-        "owner": "juuyokka",
+        "lastModified": 1780155488,
+        "narHash": "sha256-c3bZ2cfMBMkxuADzkZn0jJJsgDXan4p43wBSAju1n0g=",
+        "owner": "imiric",
         "repo": "qml-niri",
-        "rev": "448f27c815f9af550e595c33a1c40d50ba705159",
+        "rev": "4b31c331eccd9c99a7d97c778e374672b4a39c29",
         "type": "github"
       },
       "original": {
-        "owner": "juuyokka",
-        "ref": "feat-nix-flake",
+        "owner": "imiric",
         "repo": "qml-niri",
         "type": "github"
       }
