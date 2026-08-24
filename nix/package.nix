@@ -3,6 +3,7 @@
 , stdenvNoCC
 , qt6
 , quickshell
+, font-awesome_7
 , ... }: let
   src = lib.cleanSourceWith {
     src = ../.;
@@ -31,7 +32,8 @@ stdenvNoCC.mkDerivation {
 
   preFixup = ''
     qtWrapperArgs+=(
-    --add-flags "-p $out/share/ash-quickshell"
+      --prefix XDG_DATA_DIRS : ${font-awesome_7}/share
+      --add-flags "-p $out/share/ash-quickshell"
     )
   '';
 
