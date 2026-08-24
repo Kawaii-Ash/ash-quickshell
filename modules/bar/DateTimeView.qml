@@ -3,6 +3,8 @@ import QtQuick.Layouts
 import Quickshell
 
 Item {
+    id: root
+    required property string fontFamily
     implicitWidth: contentRow.implicitWidth
     implicitHeight: contentRow.implicitHeight
 
@@ -23,7 +25,7 @@ Item {
             horizontalAlignment: Text.AlignHCenter
             text: Qt.formatDateTime(clock.date, "hh:mm")
             color: "#bbb"
-            font.family: "Dudu Calligraphy"
+            font.family: root.fontFamily
             font.pixelSize: fontSize
         }
         Text {
@@ -32,7 +34,7 @@ Item {
             horizontalAlignment: Text.AlignHCenter
             text: Qt.formatDateTime(clock.date, "dd/MM/yy")
             color: "#bbb"
-            font.family: "Dudu Calligraphy"
+            font.family: root.fontFamily
             font.pixelSize: fontSize
         }
     }

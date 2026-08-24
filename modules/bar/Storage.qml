@@ -4,6 +4,7 @@ import Quickshell.Io
 
 Item {
     id: root
+    required property string fontFamily
     property string filesystemPath: "/"
 
     property real totalGiB: 0
@@ -64,7 +65,7 @@ Item {
         Text {
             text: usedGiB + "/" + totalGiB + "G"
             color: "#bbb"
-            font.family: "Dudu Calligraphy"
+            font.family: root.fontFamily
             font.pixelSize: 22
             anchors.verticalCenter: parent.verticalCenter
         }
@@ -72,7 +73,7 @@ Item {
         Text {
             text: usagePercent + "%"
             color: "#888"
-            font.family: "Dudu Calligraphy"
+            font.family: root.fontFamily
             font.pixelSize: 18
             anchors.verticalCenter: parent.verticalCenter
         }

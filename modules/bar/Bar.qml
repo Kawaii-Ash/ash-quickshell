@@ -6,6 +6,7 @@ PanelWindow {
     id: bar
 
     readonly property real border_radius: 10
+    property string fontFamily: "Dudu Calligraphy"
 
     readonly property string ergo_icon: "assets/ergo.xpm"
     readonly property string liesofp_icon: "assets/lies_of_p.xpm"
@@ -40,7 +41,7 @@ PanelWindow {
                 leftMargin: 5
             }
             Image { source: ergo_icon }
-            Workspaces{}
+            Workspaces { fontFamily: bar.fontFamily }
             Image { source: ergo_icon }
         }
         // center
@@ -61,10 +62,10 @@ PanelWindow {
             }
             spacing: 7
             
-            Network {}
-            Volume {}
-            Battery {}
-            DateTimeView {}
+            Network { fontFamily: bar.fontFamily }
+            Volume { fontFamily: bar.fontFamily }
+            Battery { fontFamily: bar.fontFamily }
+            DateTimeView { fontFamily: bar.fontFamily }
             Image { source: gemini_icon }
         }
     }
@@ -86,7 +87,7 @@ PanelWindow {
             spacing: 8
 
             Image { source: bluebutterfly_icon }
-            User {}
+            User { fontFamily: bar.fontFamily }
             Image { source: bluebutterfly_icon }
         }
         // center
@@ -99,11 +100,11 @@ PanelWindow {
 
             Image { source: bluebutterfly_icon } 
 
-            Cpu {}
+            Cpu { fontFamily: bar.fontFamily }
             
             Image { source: bluebutterfly_icon }
 
-            Memory {}
+            Memory { fontFamily: bar.fontFamily }
 
             Image { source: bluebutterfly_icon }
         }
@@ -117,9 +118,9 @@ PanelWindow {
             }
 
             Image { source: bluebutterfly_icon }
-            Lang {}
+            Lang { fontFamily: bar.fontFamily }
             Image { source: bluebutterfly_icon }
-            Storage {}
+            Storage { fontFamily: bar.fontFamily }
             Image { source: bluebutterfly_icon }
         }
     }

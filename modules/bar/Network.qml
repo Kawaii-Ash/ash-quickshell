@@ -3,6 +3,7 @@ import QtQuick.Layouts
 
 Item {
     id: root
+    required property string fontFamily
 
     // optional: override auto-picked interface
     property string interfaceName: ""
@@ -20,7 +21,7 @@ Item {
 
     FontMetrics {
         id: rateMetrics
-        font.family: "Dudu Calligraphy"
+        font.family: root.fontFamily
         font.pixelSize: 18
     }
 
@@ -56,7 +57,7 @@ Item {
                 Text {
                     text: "↑ " + txRow.rate.value
                     color: "#bbb"
-                    font.family: "Dudu Calligraphy"
+                    font.family: root.fontFamily
                     font.pixelSize: 18
                     Layout.fillWidth: true
                     horizontalAlignment: Text.AlignLeft
@@ -65,7 +66,7 @@ Item {
                 Text {
                     text: txRow.rate.unit
                     color: "#bbb"
-                    font.family: "Dudu Calligraphy"
+                    font.family: root.fontFamily
                     font.pixelSize: 18
                     horizontalAlignment: Text.AlignRight
                 }
@@ -81,7 +82,7 @@ Item {
                 Text {
                     text: "↓ " + rxRow.rate.value
                     color: "#bbb"
-                    font.family: "Dudu Calligraphy"
+                    font.family: root.fontFamily
                     font.pixelSize: 18
                     Layout.fillWidth: true
                     horizontalAlignment: Text.AlignLeft
@@ -90,7 +91,7 @@ Item {
                 Text {
                     text: rxRow.rate.unit
                     color: "#bbb"
-                    font.family: "Dudu Calligraphy"
+                    font.family: root.fontFamily
                     font.pixelSize: 18
                     horizontalAlignment: Text.AlignRight
                 }

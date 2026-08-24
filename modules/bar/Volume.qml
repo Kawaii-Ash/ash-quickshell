@@ -4,12 +4,13 @@ import QtQuick.Layouts
 
 Item {
     id: root
+    required property string fontFamily
     implicitWidth: contentRow.implicitWidth
     implicitHeight: contentRow.implicitHeight
 
     FontMetrics {
         id: rateMetrics
-        font.family: "dudu calligraphy"
+        font.family: root.fontFamily
         font.pixelSize: 21
     }
 
@@ -80,7 +81,7 @@ Item {
 
             Text {
                 text: volumeValue + "%"
-                font.family: "dudu calligraphy"
+                font.family: root.fontFamily
                 font.pixelSize: 21
                 color: "#ccc"
                 horizontalAlignment: Text.AlignRight
@@ -99,7 +100,7 @@ Item {
             }
             Text {
                 text: getVolume(Pipewire.defaultAudioSource) + "%"
-                font.family: "dudu calligraphy"
+                font.family: root.fontFamily
                 font.pixelSize: 21
                 color: "#ccc"
                 horizontalAlignment: Text.AlignRight

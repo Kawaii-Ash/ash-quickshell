@@ -4,6 +4,7 @@ import Quickshell.Io
 
 Item {
     id: root
+    required property string fontFamily
     implicitHeight: contentRow.implicitHeight
     implicitWidth: contentRow.implicitWidth
 
@@ -63,7 +64,7 @@ Item {
         Text {
             text: usedGiB.toFixed(1) + "/" + totalGiB.toFixed(1) + "G"
             color: "#bbb"
-            font.family: "Dudu Calligraphy"
+            font.family: root.fontFamily
             font.pixelSize: 22
             anchors.verticalCenter: parent.verticalCenter
         }
@@ -71,7 +72,7 @@ Item {
         Text {
             text: usagePercent.toFixed(0) + "%"
             color: "#888"
-            font.family: "Dudu Calligraphy"
+            font.family: root.fontFamily
             font.pixelSize: 18
             anchors.verticalCenter: parent.verticalCenter
         }

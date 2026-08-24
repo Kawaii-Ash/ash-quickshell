@@ -5,6 +5,7 @@ import Quickshell.Io
 
 Item {
     id: root
+    required property string fontFamily
     implicitHeight: contentRow.implicitHeight
     implicitWidth: contentRow.implicitWidth
 
@@ -20,7 +21,7 @@ Item {
         Text {
             text: niri.current_layout
             color: "#bbb"
-            font.family: "Dudu Calligraphy"
+            font.family: root.fontFamily
             font.pixelSize: 18
             anchors.verticalCenter: parent.verticalCenter
         }

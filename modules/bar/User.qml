@@ -5,6 +5,7 @@ import Quickshell.Io
 
 Item {
     id: root
+    required property string fontFamily
     implicitHeight: usernameText.implicitHeight
     implicitWidth: usernameText.implicitWidth
 
@@ -14,7 +15,7 @@ Item {
         id: usernameText
         text: userName || "?"
         color: "#bbb"
-        font.family: "Dudu Calligraphy"
+        font.family: root.fontFamily
         font.pixelSize: 22
         Layout.alignment: Qt.AlignVCenter
     }

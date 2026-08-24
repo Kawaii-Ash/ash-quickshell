@@ -4,6 +4,7 @@ import Quickshell.Io
 
 Item {
     id: root
+    required property string fontFamily
     implicitHeight: contentRow.implicitHeight
     implicitWidth: contentRow.implicitWidth
 
@@ -32,13 +33,13 @@ Item {
 
     FontMetrics {
         id: usageMetrics
-        font.family: "Dudu Calligraphy"
+        font.family: root.fontFamily
         font.pixelSize: 22
     }
 
     FontMetrics {
         id: tempMetrics
-        font.family: "Dudu Calligraphy"
+        font.family: root.fontFamily
         font.pixelSize: 18
     }
 
@@ -98,7 +99,7 @@ Item {
         Text {
             text: usagePercent.toFixed(0) + "%"
             color: "#bbb"
-            font.family: "Dudu Calligraphy"
+            font.family: root.fontFamily
             font.pixelSize: 22
             anchors.verticalCenter: parent.verticalCenter
             width: usageMetrics.boundingRect(usageTemplate).width
@@ -107,7 +108,7 @@ Item {
         Text {
             text: isNaN(temperatureC) ? "--°C" : temperatureC + "\u00b0C"
             color: "#888"
-            font.family: "Dudu Calligraphy"
+            font.family: root.fontFamily
             font.pixelSize: 18
             anchors.verticalCenter: parent.verticalCenter
             width: tempMetrics.boundingRect(tempTemplate).width

@@ -3,6 +3,7 @@ import Quickshell.Io
 
 Item {
     id: root
+    required property string fontFamily
     property string batteryPath: "/sys/class/power_supply/BAT"
     property int percent: -1
     property string status: ""
@@ -86,7 +87,7 @@ Item {
         Text {
             text: percentText
             color: "#bbb"
-            font.family: "Dudu Calligraphy"
+            font.family: root.fontFamily
             font.pixelSize: 22
             anchors.verticalCenter: parent.verticalCenter
         }

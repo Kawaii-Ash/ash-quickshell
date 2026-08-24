@@ -3,6 +3,7 @@ import QtQuick.Layouts
 
 Item {
     id: root
+    required property string fontFamily
     implicitWidth: list.contentWidth
     implicitHeight: (list.contentItem ? list.contentItem.childrenRect.height : 0)
 
@@ -30,7 +31,7 @@ Item {
                 text: model.name && model.name.length ? model.name : model.index
                 color: model.isFocused ? "#fff" : "#ccc"
                 font.pixelSize: 22
-                font.family: "Dudu Calligraphy"
+                font.family: root.fontFamily
                 visible: iconCode === ""
             }
         }
